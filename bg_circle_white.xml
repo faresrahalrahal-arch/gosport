@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval">
-    <solid android:color="#FFFFFF"/> <!-- اللون الأبيض -->
-    <size
-        android:width="50dp"
-        android:height="50dp"/> <!-- الحجم الافتراضي -->
-    <corners android:radius="25dp"/> <!-- للتأكد من الدائرة -->
-</shape>
