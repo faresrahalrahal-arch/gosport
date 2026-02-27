@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_top">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue\nChoisir ton type ?"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <!-- Card Container -->
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="465dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_top"
+        android:paddingTop="35dp"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+
+        android:elevation="8dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Chercheur -->
+            <RadioButton
+                android:id="@+id/rbUser"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_q_item"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Chercheur"
+                android:textSize="16sp"
+                android:buttonTint="#2F97C1"
+                android:drawableEnd="@mipmap/chercher"
+                android:drawablePadding="12dp"/>
+
+            <!-- Operateur -->
+            <RadioButton
+                android:id="@+id/rbAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_q_item"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Operateur"
+                android:textSize="16sp"
+                android:buttonTint="#2F97C1"
+                android:drawableEnd="@mipmap/utilisateur"
+                android:drawablePadding="12dp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:backgroundTint="#00C9A7"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

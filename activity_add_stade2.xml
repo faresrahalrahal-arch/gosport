@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_top"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_top">
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajouter un Stade"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </LinearLayout>
+
+        <!-- CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_rounded"
+            android:padding="20dp"
+            android:layout_marginTop="-30dp">
+
+            <!-- SPORTS -->
+            <RadioGroup
+                android:id="@+id/radioSports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radioFootball"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/sport_selector_bg"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/football" />
+
+                <RadioButton
+                    android:id="@+id/radioBasket"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/sport_selector_bg"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/baskett"
+                    android:padding="11dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioVolley"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/sport_selector_bg"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/volly"
+                    android:padding="11dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioTennis"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/sport_selector_bg"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/tennis"
+                    android:padding="11dp"/>
+            </RadioGroup>
+
+            <!-- INPUTS -->
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Nom du stade"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="20dp"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edtCoord"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Latitude,Longitude"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edtCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Capacité"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edtAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Disponibilité"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Lieu"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Prix"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:padding="12dp"/>
+
+            <Button
+                android:id="@+id/btnAddStadium"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:text="sign_up"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:backgroundTint="#00C9A7"
+                app:cornerRadius="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
